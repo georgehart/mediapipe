@@ -1,5 +1,20 @@
-import mediapipe as mp
+'''
+                       Title: Face Mesh Detection using MediaPipe
+Description: This script captures video from the webcam and uses MediaPipe's Face Mesh solution to detect
+and draw facial landmarks on the video frames in real-time.
 
+
+author : Georges Hart
+date   : 22 oktober 2025
+
+description : 
+
+
+
+
+
+'''
+import mediapipe as mp
 from videosource import WebcamSource
 
 mp_drawing = mp.solutions.drawing_utils
