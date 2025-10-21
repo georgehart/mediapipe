@@ -52,8 +52,8 @@ def main():
                         connection_drawing_spec=drawing_spec,
                     )
              # ----- Add title overlay -----
-            cv2.putText(frame, 'Face Mesh Detection', (10, 30), 
-                       cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            cv2.putText(frame, 'HELdB TFE25 - GH: VIDEOTRACKING', (10, 30), 
+                       cv2.FONT_HERSHEY_PLAIN, 1, (255, 255, 255), 1)
             
             source.show(frame)
 
