@@ -15,6 +15,9 @@ description :
 
 '''
 import mediapipe as mp
+import cv2
+
+
 from videosource import WebcamSource
 
 mp_drawing = mp.solutions.drawing_utils
@@ -48,9 +51,11 @@ def main():
                         landmark_drawing_spec=drawing_spec,
                         connection_drawing_spec=drawing_spec,
                     )
-
+             # ----- Add title overlay -----
+            cv2.putText(frame, 'Face Mesh Detection', (10, 30), 
+                       cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            
             source.show(frame)
-
 
 if __name__ == "__main__":
     main()
