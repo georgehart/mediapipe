@@ -55,6 +55,16 @@ def main():
             cv2.putText(frame, 'HELdB TFE25 - GH: VIDEOTRACKING', (10, 30), 
                        cv2.FONT_HERSHEY_PLAIN, 1, (255, 255, 255), 1)
             
+''' -------------------------------------------------------------------------------------------------           
+            # ----- convert image to Gray scale -----
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            # You must convert it back to BGR so it can be displayed by source.show()
+            # (which expects a 3-channel image)
+            frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
+-------------------------------------------------------------------------------------------------'''
+
+
+
             source.show(frame)
 
 if __name__ == "__main__":
